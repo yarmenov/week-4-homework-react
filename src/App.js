@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Footer from "./Footer";
 import "./styles.css";
 
 export default function WeatherSearch() {
@@ -49,6 +50,7 @@ export default function WeatherSearch() {
             <img src={weather.icon} alt={weather.description} />
           </li>
         </ul>
+        <Footer />
       </div>
     );
   } else {
